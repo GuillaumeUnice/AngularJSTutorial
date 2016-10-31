@@ -1,0 +1,19 @@
+<form name="formLogin" ng-submit="login.login(login.username, login.password)" novalidate>
+    <label for="username1">Username</label>
+    <input name="username1" type="text" ng-model="login.username" required/>
+    <br>
+    <label for="password1">password</label>
+      <input name="password1" type="password" ng-model="login.password" ng-minlength="3" required/>
+    </div>
+    <br>
+    {{formLogin.password1.$error}}
+
+    <p ng-show="formLogin.password1.$pristine" style="color: red;">
+      Password input has been pristine!
+    </p>
+    <p ng-show="formLogin.password1.$error.minlength" style="color: red;">
+      Your password is too short!!!
+    </p>
+	<br>  
+    <button type="submit" ng-disabled="formLogin.$invalid">Login</button>
+</form>
