@@ -1,0 +1,9 @@
+.serie-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.serie {
+    flex: 0 2 320px;
+}

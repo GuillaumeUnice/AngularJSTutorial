@@ -1,0 +1,16 @@
+progress {
+  width: 100%;
+  margin: 2em auto;
+  background: rgb(137,137,137);
+  margin: 10px 0px;
+}
+progress::-webkit-progress-bar {
+    background: transparent;
+}  
+progress::-webkit-progress-value {
+  background: rgb(33, 150, 243);
+}
+ progress::-moz-progress-bar {
+   background: rgb(33, 150, 243);
+ }
+ 
