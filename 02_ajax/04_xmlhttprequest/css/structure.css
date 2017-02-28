@@ -1,0 +1,85 @@
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: rgb(221,221,221);
+  /**
+  linear-gradient ou radial-gradient, la premier valeur est l'orientation puis les couleurs qui peuvent être complété
+  d'un pourcentage d'espace d'étendu qu'il doive prendre
+  on peut préciser plusieurs couleur (l'interpolation se fera automatiquement)
+
+  attention les anciens specification de la direction du dégradé été "bottom" et non "to bottom"
+  l'orientation en degré s'éffectue selon la norme du W3C 180deg == to bottom de haut en bas et 90deg de gauche à droite == "to right" */
+  background-image: linear-gradient(to bottom,  rgb(195, 195, 195) 80%, rgb(221,221,221)); 
+}
+
+/* structure css */
+header {
+  position: relative;
+  top: 0;
+  left: 0; 
+  right: 0;
+  padding: 10px;
+  background-color: rgb(33, 150, 243);
+  margin: 0;
+  padding: 10px 5px;
+  font-weight: bold;
+}
+
+section {
+  margin: 20px 0;
+  padding: 10px;
+}
+
+article {
+  background: gray;
+  width: 370px;
+  border-radius: 2px;
+  margin: 10px 10px;
+
+   /*white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;*/
+  
+  /*word-wrap: break-word;
+  text-overflow: ellipsis;*/
+}
+
+article figure {
+  margin: 5px 0;
+}
+
+article header > h1 {
+  text-align: center;
+}
+article img {
+  width: 100px;
+  float: left;
+}
+
+article p {
+  /*margin: 10px 15px;
+  float: left;*/
+  margin-left: 105px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* number of lines to show */   
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+article.serie {
+  overflow: hidden; height: 255px;
+}
+
+#best-serie {
+  background-color: rgb(33, 150, 243);
+  /*padding: 10px;*/
+  text-align: center;
+}

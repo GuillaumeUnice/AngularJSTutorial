@@ -1,0 +1,6 @@
+/* mobile first approach*/
+@media screen and (min-width: 1140px) {
+    #best-serie {
+        width: 33%;
+    }    
+}
