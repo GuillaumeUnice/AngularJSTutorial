@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?j4afct');
+  src:  url('fonts/icomoon.eot?j4afct#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?j4afct') format('truetype'),
+    url('fonts/icomoon.woff?j4afct') format('woff'),
+    url('fonts/icomoon.svg?j4afct#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-plus:before {
+  content: "\e908";
+}
+.icon-add:before {
+  content: "\e908";
+}
+.icon-sum:before {
+  content: "\e908";
+}
+.icon-calendar:before {
+  content: "\e001";
+}
+.icon-users:before {
+  content: "\e002";
+}
+.icon-bin:before {
+  content: "\e010";
+}
+.icon-eye:before {
+  content: "\e003";
+}
+.icon-bookmark:before {
+  content: "\e004";
+}
+.icon-star:before {
+  content: "\e005";
+}
+.icon-heart:before {
+  content: "\e006";
+}
+.icon-minus:before {
+  content: "\e007";
+}
+.icon-close:before {
+  content: "\e009";
+}
+

@@ -15,14 +15,16 @@
     <header id="main-header">
       <h1>
         Serie List
-      </h1> 
-       <button class="button">Add serie</button>
+      </h1>
+       <button class="button" onclick="loadFormPage()">Add serie</button>
      </header>
      <section id="serie-page">
-      <aside id="best-serie" style="   ">
+      <aside id="best-serie">
         <h2>Serie populaires</h2>
-        <div style="background-color: gray;  font-weight: bold; height: 60px; margin: 10px 15px;">
-          <img src="http://placehold.it/300x430"  style="vertical-align:middle" height="60" /> <span style="font-size: 2em; ">+</span> WestWorld
+        <div>
+          <img src="http://placehold.it/300x430" height="80" />
+          <p>WestWorld</p>
+          <span>+</span>
         </div>
 
       </aside>
@@ -42,8 +44,10 @@
       </div>
 
      </section>
-
-     <script src="js/serie.js"></script>
+     <script src="js/model/serieModel.js"></script>
+     <script src="js/api/http.js"></script>
+     <script src="js/api/serie.js"></script>
+     <script src="js/component/serieComponent.js"></script>
      <script src="js/main.js"></script>
   </body>
 </html>

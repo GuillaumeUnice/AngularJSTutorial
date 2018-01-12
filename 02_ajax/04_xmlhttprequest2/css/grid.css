@@ -1,0 +1,43 @@
+.serie-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* TODO keep or not?
+.serie {
+    flex: 0 2 320px;
+}
+*/
+
+/* ADD */
+#serie-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#best-serie {
+    order: 2;
+    width: 100%;
+    height: 500px;
+}
+.serie-container {
+    width: 66%;
+    order:1;
+}
+
+#main-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#best-serie {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}

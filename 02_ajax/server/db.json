@@ -1,3 +1,24 @@
 {
-  "series": []
+  "series": [
+    {
+      "id": 72705,
+      "title": "Marvel's Spider-Man",
+      "number_episode": 14,
+      "season": 1,
+      "synopsis": null,
+      "current_episode": 13,
+      "added": true,
+      "img": "//placehold.it/300x430"
+    },
+    {
+      "id": 48162,
+      "title": "İşler Güçler",
+      "number_episode": 0,
+      "season": 1,
+      "synopsis": null,
+      "current_episode": 0,
+      "added": true,
+      "img": "//image.tmdb.org/t/p/w300//rN4PzxhjEbeevReoMnYg7W4t58d.jpg"
+    }
+  ]
 }

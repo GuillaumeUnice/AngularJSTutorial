@@ -1,0 +1,24 @@
+/* mobile first approach*/
+@media screen and (min-width: 1140px) {
+    #best-serie {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 690px) {
+
+    #search-serie-page {
+        font-size: 0.8em;
+        line-height: 2.8em;
+    }
+
+    #main-header button {
+        font-size: 10px;
+        height: 30px;
+        min-width: 10px;
+    }
+
+    #search-serie-page button i {
+        font-size: 10px;
+    }
+}

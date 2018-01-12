@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <title>CSS3 Tutorial</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="CSS3 Tutorial">
+    <meta name="keywords" content="CSS,Tutorial">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header id="main-header">
+      <h1>
+        Serie List
+      </h1>
+      <div id="search-serie-page">
+        <form enctype="application/x-www-form-urlencoded" method="post" id="search-form">
+          <label for="query">
+            Nom de la Serie
+          </label>
+          <input type="text" id="query" name="query" required />
+          <button class="button" type="submit"><i class="icon-plus"></i> Search</button>
+        </form>
+      </div>
+       <button class="button" onclick="index()">Return</button>
+     </header>
+     <section id="serie-page">
+      <aside id="best-serie">
+        <h2>Serie populaires</h2>
+        <div>
+          <img src="http://placehold.it/300x430" height="80" />
+          <p>WestWorld</p>
+          <span>+</span>
+        </div>
+
+      </aside>
+      <div class="serie-container" >
+      </div>
+     </section>
+
+     <script src="js/model/serieModel.js"></script>
+     <script src="js/api/http.js"></script>
+     <script src="js/api/serie.js"></script>
+     <script src="js/component/serieComponent.js"></script>
+     <script src="js/component/serieBestComponent.js"></script>
+     <script src="js/main.js"></script>
+  </body>
+</html>

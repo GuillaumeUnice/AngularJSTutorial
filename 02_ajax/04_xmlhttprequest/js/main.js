@@ -3,7 +3,7 @@
 
     var serie = new Serie();
 
-function addSerie (err, res) {
+    function addSerie (err, res) {
         
         if(err) {
             console.error(err);
@@ -11,6 +11,8 @@ function addSerie (err, res) {
 
             // console.log(document.getElementsByClassName("serie-container"));
             var currentSerieContainer = document.getElementsByClassName("serie-container")[0];
+            currentSerieContainer.innerHTML = '';
+
             console.log('RES', res);
             if(res.length === 0) {
                 currentSerieContainer.innerHTML = '<p style="font-size: 2em; color: rgb(33, 150, 243);">Aucune serie trouvé pour le moment</p>';
@@ -21,6 +23,7 @@ function addSerie (err, res) {
             })
         }
     }
+    
 //////////////////////////////////////////////////////////////////
     serie.getMySeries(addSerie);
 
@@ -34,10 +37,13 @@ function addSerie (err, res) {
     var searchForm = document.getElementById('search-form');
   
     searchForm.addEventListener('submit', function(e) {
-        alert('Vous avez envoyé le formulaire !\n\nMais celui-ci a été bloqué pour que vous ne changiez pas de page.');
+        // alert('Vous avez envoyé le formulaire !\n\nMais celui-ci a été bloqué pour que vous ne changiez pas de page.');
         e.preventDefault();
-
-        serie.getSeries(addSerie);
+        // console.log(e);
+        // console.log(searchForm.elements["query"].value);
+        var form = new FormData(this);
+        // console.log(form);
+        serie.getSeries(searchForm.elements["query"].value, addSerie);
     });
   
     // searchForm.addEventListener('reset', function(e) {
